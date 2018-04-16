@@ -1,4 +1,12 @@
 
+    <script>
+  $(document).ready(function() {
+   $("#getMessage").on("click", function(){
+
+  $(".OK").addClass("animated fadeOut");
+  });  
+});
+</script>
 <style>
   .主題 {
     color: yellow;
@@ -23,31 +31,29 @@
 
 </style>
 
+
 <div class="back">
 <h2 class="主題"><marquee behavior=alternate> 我愛聖結石</marquee> </h2>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>fadeOut demo</title>
-  <style>
-  p {
-    font-size: 150%;
-    cursor: pointer;
-  }
-  </style>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
- 
+
 <p class="副題1">BANG! ! !</p>
 <p class="副題2">1.我今天中午要吃雞腿BANG當</p>
 <p class="副題2">2.要買輕BANG雨衣要買三件</p>
 <p class="副題2">3.遇到困難BANG則通，通則達</p>
+<div class="container-fluid">
+<div class = "row text-center">
+    <div class = "col-xs-12">
+      <button id = "getMessage" class = "btn btn-primary">
+        Get Message
+      </button>
+    </div>
+  </div>
+
+<div class="OK">
 <img src="https://i.kfs.io/album/global/31090288,0v1/fit/500x500.jpg" alt="聖結石"width="400" height="400"style="display:block; margin:auto;">
+</div>
+
 <script>
 $( "p" ).click(function() {
-  $( "img" ).fadeOut( "slow" );
+  $( "p" ).fadeOut( "slow" );
 });
 </script>
- 
-</body>
